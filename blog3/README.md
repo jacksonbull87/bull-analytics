@@ -9,3 +9,8 @@
 |`before_tiktok_date`|7 days before track's first chart placement|
 | `title`|Track's title|
 |`artist`| Primary artist|
+|`isrc`| isrc|
+|`velocity`|Average change in rank over a 7-day period|
+|`cm_id`| Chartmetric's unique ID associated with a track|
+|`time_on_chart`|Number of days spent on the chart at the time of `add_date`|
+|`release_dates`|Track's release date|
