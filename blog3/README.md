@@ -15,4 +15,5 @@
 |`time_on_chart`|Number of days spent on the chart at the time of `add_date`|
 |`release_dates`|Track's release date|
 |`cm_artist_id`| Chartmetric's unique artist identification|
-|`slisteners_before`|An artist's total listeners on Spotify 7 days before
+|`slisteners_before`|Artist's total listeners on Spotify 7 days before
+|`slisteners_after`|Artist's total listeners on Spotify on chart placement date
