@@ -14,3 +14,4 @@
 |`cm_id`| Chartmetric's unique ID associated with a track|
 |`time_on_chart`|Number of days spent on the chart at the time of `add_date`|
 |`release_dates`|Track's release date|
+|`cm_artist_id`| Chartmetric's unique artist identification|
