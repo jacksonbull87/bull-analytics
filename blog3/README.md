@@ -23,3 +23,6 @@
 |`TW_f21`|# of Twitter followers on January 21|
 |`Tiktok_f31`|# of Tiktok followers on December 31|
 |`Tiktok_f21`|# of Tiktok followers on January 21|
+|`TW%`| Percent Increase in Twitter followers|
+|`IG%`| Percent Increase in Instagram followers|
+|`TK%`| Percent Increase in Tiktok followers|
