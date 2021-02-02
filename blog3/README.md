@@ -3,6 +3,8 @@
 This project uses social media data from the top trending artists on Tiktok during the week of January 21st, 2021 in order to analyze
 how Olivia Rodrigo's massive fanbase helped her break multiple streaming records. 
 
+![](https://media.giphy.com/media/seqkUxQi2IbzZEBXes/source.gif)
+
 [Link to Full Blog Post](https://bull-analytics.com/f/why-fandom-matters-for-artists-outliers-pt-2)
 
 
