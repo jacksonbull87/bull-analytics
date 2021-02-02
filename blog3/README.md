@@ -7,7 +7,9 @@ how Olivia Rodrigo's massive fanbase helped her break multiple streaming records
 <img src="https://media.giphy.com/media/seqkUxQi2IbzZEBXes/giphy-downsized.gif">
 </p>
 
+<p align="center"> 
 [Link to Full Blog Post](https://bull-analytics.com/f/why-fandom-matters-for-artists-outliers-pt-2)
+</p>
 
 
 ## Data Dictionary
