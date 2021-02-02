@@ -4,7 +4,7 @@ This project uses social media data from the top trending artists on Tiktok duri
 how Olivia Rodrigo's massive fanbase helped her break multiple streaming records. 
 
 <p align="center"> 
-<img src="https://media.giphy.com/media/seqkUxQi2IbzZEBXes/source.gif">
+<img src="https://media.giphy.com/media/seqkUxQi2IbzZEBXes/giphy-downsized.gif">
 </p>
 
 [Link to Full Blog Post](https://bull-analytics.com/f/why-fandom-matters-for-artists-outliers-pt-2)
