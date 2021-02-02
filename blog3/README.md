@@ -1,4 +1,10 @@
-# Blog 3 Summary
+# Why Fandom Matters For Artists (Outliers, Pt. 2)
+## Summary
+This project uses social media data from the top trending artists on Tiktok during the week of January 21st, 2021 in order to analyze
+how Olivia Rodrigo's massive fanbase helped her break multiple streaming records. 
+
+[Link to Full Blog Post](https://bull-analytics.com/f/why-fandom-matters-for-artists-outliers-pt-2)
+
 
 ## Data Dictionary
 
