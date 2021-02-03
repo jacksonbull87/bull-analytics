@@ -41,3 +41,5 @@ how Olivia Rodrigo's massive fanbase helped her break multiple streaming records
 ### Twitter Insights
 
 <img align="left" width="1000" height="500" src="https://github.com/jacksonbull87/bull-analytics/blob/main/blog3/visuals/tw_f31.jpeg">
+
+<img align="right" width="1000" height="500" src="https://github.com/jacksonbull87/bull-analytics/blob/main/blog3/visuals/tw_f21.jpeg">
