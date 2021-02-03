@@ -36,3 +36,8 @@ how Olivia Rodrigo's massive fanbase helped her break multiple streaming records
 |`TW%`| Percent Increase in Twitter followers|
 |`IG%`| Percent Increase in Instagram followers|
 |`TK%`| Percent Increase in Tiktok followers|
+
+## Insights
+### Twitter Insights
+
+<img align="left" width="100" height="100" src="https://github.com/jacksonbull87/bull-analytics/blob/main/blog3/visuals/tw_f31.jpeg">
