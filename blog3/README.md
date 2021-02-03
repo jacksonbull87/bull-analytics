@@ -49,3 +49,7 @@ how Olivia Rodrigo's massive fanbase helped her break multiple streaming records
 
 <img align="right" width="1000" height="500" src="https://github.com/jacksonbull87/bull-analytics/blob/main/blog3/visuals/ig_f21.jpeg">
 
+### Tiktok Insights
+<img align="left" width="1000" height="500" src="https://github.com/jacksonbull87/bull-analytics/blob/main/blog3/visuals/tk_f31.jpeg">
+
+<img align="right" width="1000" height="500" src="https://github.com/jacksonbull87/bull-analytics/blob/main/blog3/visuals/tk_f21.jpeg">
