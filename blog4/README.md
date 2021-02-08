@@ -1,6 +1,6 @@
 # Blog 4 (*Untitled*)
 ## Summary
-This project analyzes data from emerging artists previously on a non-Spotify, non-label platlist. The goal of the research is to find out what social media platforms have the strongest relationship with Follower Activation on Spotify.
+This project analyzes data from emerging artists previously on a non-Spotify, non-label platlist. The goal of the research is to find out what social media platforms have the strongest relationship with `Net Follower Gain`.
 
 ### Playlist Source
 - TBD
@@ -12,4 +12,4 @@ This project analyzes data from emerging artists previously on a non-Spotify, no
 - Instagram, Twitter, Tiktok
 
 ### Questions
-- Which platform has the strongest relationship with net gain of Spotify Followers
+- Which platform has the strongest relationship with `Net Follower Gain`
