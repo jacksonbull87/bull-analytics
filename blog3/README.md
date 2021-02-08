@@ -44,12 +44,29 @@ how Olivia Rodrigo's massive fanbase helped her break multiple streaming records
 
 <img align="right" width="1000" height="500" src="https://github.com/jacksonbull87/bull-analytics/blob/main/blog3/visuals/tw_f21.jpeg">
 
+#### Key-Takeaways
+
+- No artist in this data sample moved from the middle 50% to the top 25% of total followers
+- Olivia Rodrigo is the only artist in this sample to double their followers from Dec. 31 - Jan. 21
+
 ### Instagram Insights
 <img align="left" width="1000" height="500" src="https://github.com/jacksonbull87/bull-analytics/blob/main/blog3/visuals/ig_f31.jpeg">
 
 <img align="right" width="1000" height="500" src="https://github.com/jacksonbull87/bull-analytics/blob/main/blog3/visuals/ig_f21.jpeg">
 
+#### Key-Takeaways
+
+- Olivia Rodrigo is the only artist in this sample to move from the middle 50% to the top 25% of total IG followers
+- Olivia Rodrigo is one of two artists in this sample who doubled their IG followers. The other artist is Papu DJ & L-Gante whose song, L-Gante Rkt, spent 35 days on the chart versus just 12 days for Drivers License.
+- Despite Papu DJ and L-Gante doubling their followers to 17k, they still fall short of the median value (298k)
+
 ### Tiktok Insights
 <img align="left" width="1000" height="500" src="https://github.com/jacksonbull87/bull-analytics/blob/main/blog3/visuals/tk_f31.jpeg">
 
 <img align="right" width="1000" height="500" src="https://github.com/jacksonbull87/bull-analytics/blob/main/blog3/visuals/tk_f21.jpeg">
+
+#### Key-Takeaways
+
+- Olivia Rodrigo is the only artist in this sample to move from the middle 50% to the top 25% of total IG followers
+- Olivia Rodrigo is one of two artists in this sample who doubled their Tiktok followers. The other artist is Erica Banks whose song, Buss It, spent 33 days on the chart versus just 12 days for Drivers License.
+- Despite having doubled her Tiktok followers, Banks still falls short of the median value (1 million followers) with only 55k Tiktok followers
