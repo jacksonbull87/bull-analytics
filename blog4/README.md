@@ -1,6 +1,6 @@
 # Blog 4 (*Untitled*)
 ## Summary
-This project analyzes data from emerging artists previously on a non-Spotify, non-label platlist. The goal of the research is to find out what social media platforms have the strongest relationship with `Net Follower Gain/Loss(Spotify)`.
+This project analyzes data from artists previously on a non-Spotify, non-label platlist. The goal of the research is to find out what social media platforms have the strongest relationship with `Net Follower Gain/Loss(Spotify)`.
 
 ### Playlist Source
 - Name: Alternative VIBES
@@ -20,9 +20,9 @@ This project analyzes data from emerging artists previously on a non-Spotify, no
 ## Data Dictionary
 
 
-| Variable        | Description                          |
-| :---:|:---: |
-| `added_at`    | Date of track's placement on playlist|
+| Variable        | Description     | 
+| :---:|:---: | 
+| `added_at`    | Date of track's placement on playlist| 
 | `title`|Track's title|
 |`artist`| Primary artist|
 |`isrc`| isrc|
