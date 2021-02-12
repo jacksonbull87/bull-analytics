@@ -1,6 +1,6 @@
 # Understanding The Artist Growth Funnel
 ## Summary
-This project analyzes data from artists previously on a non-Spotify, non-label platlist. The goal of the research is to find out what social media platforms have the strongest relationship with `Net Follower Gain/Loss(Spotify)`.
+This project analyzes data from artists previously on a non-Spotify, non-label playlist. The goal of the research is to find out what social media platforms have the strongest relationship with `Net Follower Gain/Loss(Spotify)`.
 
 ### Playlist Source
 - Name: Alternative VIBES
