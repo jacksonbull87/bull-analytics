@@ -83,3 +83,20 @@ This project analyzes data from artists previously on a non-Spotify, non-label p
  - Pearson’s Correlation Coefficient (PCC): .50
  - 20% of artists have Tiktok accounts
  - 80% do not have Tiktok
+
+
+ ### Net Gain - Spotify Followers
+<img align="center" width="1000" height="500" src="https://github.com/jacksonbull87/bull-analytics/blob/main/blog4/visuals/igboxplot.png">
+
+#### Legend
+
+ * Green dots indicate artists with Twitter, Instagram, and Tiktok accounts
+ * Red dots indicate artists who do not have Tiktok accounts
+ * Blue indicates those who only have Twitter accounts
+ * Black dots only have instagram accounts
+
+
+#### Key-Takeaways
+
+ - Top performers all have Tiktok accounts, despite only 20% of these artists having an official presense within the app
+ - Artists with only Twitter and Instagram accounts is the second most successful group in terms of growth
