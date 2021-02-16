@@ -60,20 +60,26 @@ This project analyzes data from artists previously on a non-Spotify, non-label p
 - 26% do not have Twitter
 
 
-
-
-
-
 ### Instagram Insights
-<!-- <img align="left" width="1000" height="500" src="https://github.com/jacksonbull87/bull-analytics/blob/main/blog3/visuals/ig_f31.jpeg">
+<img align="left" width="800" height="500" src="https://github.com/jacksonbull87/bull-analytics/blob/main/blog4/visuals/igscatter.png">
 
-<img align="right" width="1000" height="500" src="https://github.com/jacksonbull87/bull-analytics/blob/main/blog3/visuals/ig_f21.jpeg"> -->
+<img align="right" width="800" height="500" src="https://github.com/jacksonbull87/bull-analytics/blob/main/blog4/visuals/igbarplot.png">
 
 #### Key-Takeaways
+
+ - Pearson’s Correlation: .77
+ - 72% of artists have Instagram accounts
+ - 28% do not have Instagram
 
 
 
 ### Tiktok Insights
-<!-- <img align="left" width="1000" height="500" src="https://github.com/jacksonbull87/bull-analytics/blob/main/blog3/visuals/tk_f31.jpeg">
+<img align="left" width="1000" height="500" src="https://github.com/jacksonbull87/bull-analytics/blob/main/blog4/visuals/tkscatter.png">
 
-<img align="right" width="1000" height="500" src="https://github.com/jacksonbull87/bull-analytics/blob/main/blog3/visuals/tk_f21.jpeg"> -->
+<img align="right" width="1000" height="500" src="https://github.com/jacksonbull87/bull-analytics/blob/main/blog4/visuals/tkbarplot.png">
+
+#### Key-Takeaways
+
+ - Pearson’s Correlation Coefficient (PCC): .50
+ - 20% of artists have Tiktok accounts
+ - 80% do not have Tiktok
