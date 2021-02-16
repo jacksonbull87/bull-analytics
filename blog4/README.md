@@ -49,9 +49,9 @@ This project analyzes data from artists previously on a non-Spotify, non-label p
 ## Insights
 ### Twitter Insights
 
-<img align="left" width="500" height="500" src="https://github.com/jacksonbull87/bull-analytics/blob/main/blog4/visuals/twscatter.png">
+<img align="center" width="800" height="500" src="https://github.com/jacksonbull87/bull-analytics/blob/main/blog4/visuals/twscatter.png">
 
-<img align="right" width="500" height="500" src="https://github.com/jacksonbull87/bull-analytics/blob/main/blog4/visuals/twbarplot.png">
+<img align="center" width="800" height="500" src="https://github.com/jacksonbull87/bull-analytics/blob/main/blog4/visuals/twbarplot.png">
 
 #### Key-Takeaways
 
