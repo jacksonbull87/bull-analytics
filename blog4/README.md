@@ -61,9 +61,9 @@ This project analyzes data from artists previously on a non-Spotify, non-label p
 
 
 ### Instagram Insights
-<img align="left" width="800" height="500" src="https://github.com/jacksonbull87/bull-analytics/blob/main/blog4/visuals/igscatter.png">
+<img align="center" width="800" height="500" src="https://github.com/jacksonbull87/bull-analytics/blob/main/blog4/visuals/igscatter.png">
 
-<img align="right" width="800" height="500" src="https://github.com/jacksonbull87/bull-analytics/blob/main/blog4/visuals/igbarplot.png">
+<img align="center" width="800" height="500" src="https://github.com/jacksonbull87/bull-analytics/blob/main/blog4/visuals/igbarplot.png">
 
 #### Key-Takeaways
 
@@ -74,9 +74,9 @@ This project analyzes data from artists previously on a non-Spotify, non-label p
 
 
 ### Tiktok Insights
-<img align="left" width="1000" height="500" src="https://github.com/jacksonbull87/bull-analytics/blob/main/blog4/visuals/tkscatter.png">
+<img align="center" width="800" height="500" src="https://github.com/jacksonbull87/bull-analytics/blob/main/blog4/visuals/tkscatter.png">
 
-<img align="right" width="1000" height="500" src="https://github.com/jacksonbull87/bull-analytics/blob/main/blog4/visuals/tkbarplot.png">
+<img align="center" width="800" height="500" src="https://github.com/jacksonbull87/bull-analytics/blob/main/blog4/visuals/tkbarplot.png">
 
 #### Key-Takeaways
 
