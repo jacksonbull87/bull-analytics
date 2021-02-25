@@ -20,6 +20,6 @@
 <img align="center" width="1000" height="800" src="https://github.com/jacksonbull87/bull-analytics/blob/main/blog6/visuals/bartees_igfollower_releasetrend.png">
 
 ## Comparing Spotify Followers (Fresh Finds: Rock)
-<img align="center" width="1000" height="800" src="https://github.com/jacksonbull87/bull-analytics/blob/main/blog6/visuals/freshfinds_followers_bp.png">
+<img align="center" width="1000" height="700" src="https://github.com/jacksonbull87/bull-analytics/blob/main/blog6/visuals/freshfinds_followers_bp.png">
 
 
