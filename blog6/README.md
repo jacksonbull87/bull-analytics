@@ -8,4 +8,4 @@
 
 ## Spotify Followers by Release
 
-<img align="center" width="1200" height="1500" src="https://github.com/jacksonbull87/bull-analytics/blob/main/blog6/visuals/bartees_follower_releasetrend.png">
+<img align="center" width="1000" height="800" src="https://github.com/jacksonbull87/bull-analytics/blob/main/blog6/visuals/bartees_follower_releasetrend.png">
