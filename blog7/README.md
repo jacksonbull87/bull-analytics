@@ -18,7 +18,7 @@ This insights tools is designed to analyze the top trending tracks on Tiktok's w
 |`release_dates`|Track's release date|
 |`total_spotify_followers`|# of Spotfiy followers 7 days before `added_at`|
 |`total_ig_followers`|# of Instagram followers 7 days before `added_at`|
-|`trACK_AGE`| age of record on chart; 1 month, 2 months, or over 2 months|
+|`track_age`| age of record on chart; 1 month, 2 months, or over 2 months|
 
 
 ### Measurement
