@@ -47,7 +47,7 @@ Since this is a discovery tool, we're only concerned with the newest records. So
 - 4 out of the 10 artists are Latin-American 
     - Wisin: 11,965,418 IG Followers **(Puerto Rico)**
     - Rauw Alejandro: 6,916,424 IG Followers **(Puerto Rico)**
-    - Kali Uchis: 2,211,918 IG Followers **(Colobian-American)**
+    - Kali Uchis: 2,211,918 IG Followers **(Colombian-American)**
     - Teto: 1,107,185 IG Followers **(Brazil)**
 
 
