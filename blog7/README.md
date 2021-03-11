@@ -30,7 +30,7 @@ This insights tools is designed to analyze the top trending tracks on Tiktok's w
 The output of the tool is a visualization showing the artists in the 75th percentile of `total_IG_followers`. The graph will update once a week
 
 ## Analysis
-<img align="center" width="1000" height="800" src="https://github.com/jacksonbull87/bull-analytics/blob/main/blog7/visuals/track_age.jpeg">
+<img align="center" width="1000" height="700" src="https://github.com/jacksonbull87/bull-analytics/blob/main/blog7/visuals/track_age.jpeg">
 
 - 11% of tracks have been on the Top 100 chart for 2 months
 - 57% of the tracks have been on the chart for over 2 months
