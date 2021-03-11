@@ -1,7 +1,7 @@
 # Artist Discovery Tool: MVP (*Work-In-Progress*)
 
 ## Description
-This insights tools is designed to analyze the top trending tracks on Tiktok's weekly chart by identifying the artists with an above-average fanbase on Spotify prior to getting placed on the chart.
+This insights tools is designed to analyze Tiktok's Top 100 Weekly chart by identifying the artists with an above-average fanbase on Instagram prior to getting placed on the chart.
 
 ### Data Dictionary (*Sample*)
 
