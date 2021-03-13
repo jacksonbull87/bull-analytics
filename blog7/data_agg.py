@@ -93,28 +93,18 @@ def collect_true_artist_names(api_token,dataframe):
 
     return dataframe
 
-def summ_stat_playlist_artist_popularity(api_token, playlist_id):
-    #takes in spotify playlist id and returns summary statistics of artist popularity on spotify
-    from helper_funct import get_summary_statistics
-    import pandas as pd
-    from cm_api import get_artist_metadata, get_playlist_tracks
-    data = get_playlist_tracks(api_token, 'spotify', playlist_id, 'current', 'us')
+def collect_artist_sppop(api_token, dataframe):
+    #iterates thru `cm_artist_id` returns current spotify popularity
+    from cm_api import get_artist_metadata
     bucket = []
-    for track in data:
-        tup = (track['cm_artist'][0])
-        bucket.append(tup)
-    df = pd.DataFrame(bucket, columns=['cm_artist_id'])
-
-    bucket = []
-    for row in df.iterrows():
+    for row in dataframe.iterrows():
         x = row[1]['cm_artist_id']
         artist_pop = get_artist_metadata(api_token, x)['cm_statistics']['sp_popularity']
-        print
         if (artist_pop):
             bucket.append(artist_pop)
         else:
             bucket.append(None)
 
-    df['artist_pop'] = bucket
+    dataframe['artist_pop'] = bucket
+    return dataframe
 
-    return get_summary_statistics(df['artist_pop'].dropna())
