@@ -14,6 +14,7 @@ data = pd.read_csv("data/tiktok_artists.csv")
 data.sort_values("total_ig_followers", ascending=False ,inplace=True)
 
 app = dash.Dash(__name__)
+server = app.server
 app.title = "Artist Discovery Tool: MVP"
 
 
@@ -67,7 +68,14 @@ app.layout = html.Div(
                 html.Div(
                     children=dcc.Graph(
                         id="ig-chart", config={"displayModeBar": False},
-                        ),
+                        figure={
+                            "layout":{
+                                "title":{
+                                    "text": "chart text",
+                                },
+                            },
+                        },
+                    ),
                     className="card",
                 ),
             
@@ -91,6 +99,7 @@ def update_charts(stage):
     
     filtered_data = data.loc[mask, :][:10]
     ig_chart_figure = px.bar(filtered_data, x='artist', y='total_ig_followers',
+                            title = "Top Artists of Last 30 Days",
                             labels={'artist':'Artist', 'total_ig_followers': 'Instagram Followers (1-Week Before Chart Appearance)'
 
                             },
