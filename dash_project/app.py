@@ -4,9 +4,11 @@ import dash_html_components as html
 import pandas as pd
 import numpy as np
 from dash.dependencies import Output, Input
+import plotly.express as px
 
 
-data = pd.read_csv("one_month_trax.csv")
+
+data = pd.read_csv("/home/bull/Documents/bull-analytics/dash_project/data/tiktok_artists.csv")
 # data = data.query("type == 'conventional' and region == 'Albany'")
 # data["Date"] = pd.to_datetime(data["Date"], format="%Y-%m-%d")
 data.sort_values("total_ig_followers", ascending=False ,inplace=True)
@@ -22,25 +24,25 @@ app.layout = html.Div(
             style={"fontsize": "48px", "color": "green", 'text-align': 'center'}
         ),
         html.P(
-            children="This insights tools is designed to analyze Tiktok's Top 100 Weekly chart by identifying the artists with the biggest fanbase on Instagram prior to the record's first occurance on the chart.",
-            style={"fontsize": "15px", "color": "black", 'text-align': 'center'}
+            children="This insights tool analyzes Tiktok's weekly Top 100 Tracks by comparing the number of Instagram followers of each artist.",
+            style={"fontsize": "20px", "color": "black", 'text-align': 'center'}
         ),
         html.P(
-            children="From the perspective of talent seekers and A&R professionals, one of the inherent risks when pouring more resources into a client is the possibility that they'll be no one on the other side to receive the creator's message. This tool mitigates that risk by ensuring that there is an existing audience to build off of",
-            style={"fontsize": "15px", "color": "black", 'text-align': 'center'}),
+            children="Week of {}".format(data['added_at'][0]),
+            style={"font-size": "30px", "color": "black", 'text-align': 'center', 'font-weight':['bold']}),
 
         html.Div(
             children=[
                 html.Div(
                     children=[
-                        html.Div(children="Career Stage"),
+                        html.Div(children="Artist Popularity* (Based on Spotify's internal ranking system on a scale from 0 to 100)"),
                         dcc.Dropdown(
                             id="career-filter",
                             options=[
                                 {"label": stage, "value": stage}
-                                for stage in np.sort(data['Career Stage'].unique())
+                                for stage in np.sort(data['Popularity-Index'].unique())
                             ],
-                            # value="Indie",
+                            value=">= 90",
                             clearable=False,
                             # className="dropdown",
                         ),
@@ -67,30 +69,19 @@ app.layout = html.Div(
 )
         
 def update_charts(stage):
-    mask = data['Career Stage'] == stage
+    mask = data['Popularity-Index'] == stage
 
     
-    filtered_data = data.loc[mask, :]
-    ig_chart_figure = {
-        "data": [
-            {
-                "x": filtered_data["artist"],
-                "y": filtered_data["total_ig_followers"],
-                "type": "bar",
-                # "hovertemplate": "$%{y:.2f}<extra></extra>",
-            },
-        ],
-        "layout": {
-            "title": {
-                "text": "Top Tiktok Artists by Instagram Fanbase",
-                # "x": 0.05,
-                # "xanchor": "left",
-            }
-            # "xaxis": {"fixedrange": True},
-            # "yaxis": {"tickprefix": "$", "fixedrange": True},
-            # "colorway": ["#17B897"],
-        }
-    }
+    filtered_data = data.loc[mask, :][:10]
+    ig_chart_figure = px.bar(filtered_data, x='artist', y='total_ig_followers',
+                            labels={'artist':'Artist', 'total_ig_followers': 'Instagram Followers (1-Week Before Chart Appearance)'
+
+                            },
+                            width=1500, height=800
+    
+
+    )
+
     return ig_chart_figure
 
 
