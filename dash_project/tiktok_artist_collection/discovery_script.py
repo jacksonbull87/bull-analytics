@@ -44,7 +44,7 @@ young_trax = create_instagram_followers_before_feat(api_token, young_trax)
 young_trax = collect_artist_sppop(api_token, young_trax)
 
 #Career Stage feature
-young_trax['Career Stage'] = young_trax['artist_pop'].apply(lambda x: 'Established' if x >= 88 else ('Emerging' if x >= 80 else 'Indie'))
+young_trax['Popularity-Index'] = young_trax['artist_pop'].apply(lambda x: '>= 90' if x >= 90 else ('>=80' if x >= 80 else '< 80'))
 
 #save dataset
 young_trax.to_csv('/home/bull/Documents/bull-analytics/dash_project/data/tiktok_artists.csv', index_label='index')
