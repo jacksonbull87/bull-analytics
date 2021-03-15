@@ -8,7 +8,7 @@ import plotly.express as px
 
 
 
-data = pd.read_csv("/home/bull/Documents/bull-analytics/dash_project/data/tiktok_artists.csv")
+data = pd.read_csv("data/tiktok_artists.csv")
 # data = data.query("type == 'conventional' and region == 'Albany'")
 # data["Date"] = pd.to_datetime(data["Date"], format="%Y-%m-%d")
 data.sort_values("total_ig_followers", ascending=False ,inplace=True)
@@ -19,23 +19,27 @@ app.title = "Artist Discovery Tool: MVP"
 
 app.layout = html.Div(
     children=[
+        html.Div(
+            children = [
         html.H1(
             children="Artist Discovery: MVP",
-            style={"fontsize": "48px", "color": "green", 'text-align': 'center'}
+            style={"fontsize": "48px", "color": "white", 'text-align': 'center'}
         ),
         html.P(
             children="This insights tool analyzes Tiktok's weekly Top 100 Tracks by comparing the number of Instagram followers of each artist.",
-            style={"fontsize": "20px", "color": "black", 'text-align': 'center'}
+            style={"fontsize": "20px", "color": "white", 'text-align': 'center'}
         ),
         html.P(
             children="Week of {}".format(data['added_at'][0]),
-            style={"font-size": "30px", "color": "black", 'text-align': 'center', 'font-weight':['bold']}),
-
+            style={"font-size": "30px", "color": "white", 'text-align': 'center', 'font-weight':['bold']}),
+            ],
+            className="header",
+        ),
         html.Div(
             children=[
                 html.Div(
                     children=[
-                        html.Div(children="Artist Popularity* (Based on Spotify's internal ranking system on a scale from 0 to 100)"),
+                        html.Div(children="Artist Popularity", className="menu-title"),
                         dcc.Dropdown(
                             id="career-filter",
                             options=[
@@ -46,18 +50,31 @@ app.layout = html.Div(
                             clearable=False,
                             # className="dropdown",
                         ),
+                        html.P(
+                            children="*Based on Spotify's internal ranking system from 0 to 100",
+                            style={"fontsize": "10px", "color": "black", 'text-align': 'left'}
+                        ),
+
                     ]
                 ),
-            ]
+                
+            ],
+            className="menu",
+            
         ),
-     
         html.Div(
-            children=dcc.Graph(
-                id="ig-chart", config={"displayModeBar": False},
-            )
-
+            children=[
+                html.Div(
+                    children=dcc.Graph(
+                        id="ig-chart", config={"displayModeBar": False},
+                        ),
+                    className="card",
+                ),
+            
+            ],
+            className="wrapper",
         ),
-    ]
+    ],
 )
 @app.callback(
     Output("ig-chart", "figure"),
@@ -77,7 +94,7 @@ def update_charts(stage):
                             labels={'artist':'Artist', 'total_ig_followers': 'Instagram Followers (1-Week Before Chart Appearance)'
 
                             },
-                            width=1500, height=800
+                            width=1300, height=800
     
 
     )
