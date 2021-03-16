@@ -26,13 +26,13 @@
 
 .card {
     margin-bottom: 24px;
-    box-shadow: 0 4px 6px 0  rgba(0, 0, 0, 0.18);
+    box-shadow: 0 4px 6px 0  rgba(0.18, 0.18, 0.18, 0.18);
 }
 
 .wrapper {
     margin-right: auto;
     margin-left: auto;
-    max-width: 1024px;
+    max-width: 1250px;
     padding-right: 10px;
     padding-left: 10px;
     margin-top: 32px;
