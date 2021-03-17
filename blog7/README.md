@@ -23,6 +23,8 @@ The sample dataset consists of the top 100 tracks trending on Tiktok for the wee
 |`total_spotify_followers`|# of Spotfiy followers 7 days before `added_at`|
 |`total_ig_followers`|# of Instagram followers on `Before_Tiktok_Date`|
 |`track_age`| age of record on chart; 1 month, 2 months, or over 2 months|
+|`Week_In_Chart_Date`| Date 7 day's after the record's first chart appearance|
+
 
 
 ### Measurement
