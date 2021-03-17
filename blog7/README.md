@@ -25,6 +25,7 @@ The sample dataset consists of the top 100 tracks trending on Tiktok for the wee
 |`track_age`| age of record on chart; 1 month, 2 months, or over 2 months|
 |`Week_In_Chart_Date`| Date 7 day's after the record's first chart appearance|
 |`ig_followers_afters`| # of Instagram followers on `Week_In_Chart_Date`|
+|`IG_Follower_Gain-%']`| % Gain in Instagram followers from `Before_Tiktok_Date` to `Week_In_Chart_Date`|
 
 
 
