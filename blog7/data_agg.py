@@ -80,6 +80,24 @@ def create_instagram_followers_before_feat(api_token,dataframe):
     dataframe['total_ig_followers'] = [x[0] for x in bucket]
     return dataframe
 
+def create_instagram_followers_after_feat(dataframe):
+    from cm_api import get_fan_metrics
+    bucket = []
+    for row in dataframe.iterrows():
+        before_date = str(row[1]['Before_Tiktok_Date'])[:10]
+        after_date = str(row[1]['Week_In_Chart_Date'])[:10]
+        artist_id = row[1]['cm_artist_id']
+        data = get_fan_metrics(api_token, artist_id,'instagram', str(before_date), str(after_date), field='followers')['followers']
+        if len(data) > 0:
+            tup = (data[0]['value'], data[-1]['value'])
+            bucket.append(tup)
+        else:
+            tup = (None, None)
+            bucket.append(tup) 
+
+    dataframe['ig_followers_afters'] = [x[1] for x in bucket]
+    return dataframe
+
 #replaces `artist` with True artist name instead ofg the tiktok artist name which is often inaccurate
 def collect_true_artist_names(api_token,dataframe):
     from cm_api import get_track_metadata
