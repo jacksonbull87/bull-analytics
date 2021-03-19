@@ -50,6 +50,22 @@ app.layout = html.Div(
                     children=[
                         html.Div(
                             html.P(
+                            children="Stay Tuned for Updates!", className="updatebox-title"),
+                            style={"font-size": "30px", "color": "black", 'text-align': 'center'}
+
+                        ),
+                    ],
+                ),
+            ],
+            className="updatebox",
+        ),
+
+        html.Div(
+            children=[
+                html.Div(
+                    children=[
+                        html.Div(
+                            html.P(
                             children="The Dataset", className="databox-title"),
                             style={"font-size": "30px", "color": "black", 'text-align': 'center'}
 
@@ -57,7 +73,7 @@ app.layout = html.Div(
             
                         html.P(
                             children="Consists of tracks that have entered the Top 100 within the last 30 days",
-                            style={"fontsize": "20spx", "color": "black", 'text-align': 'center',}
+                            style={"fontsize": "28px", "color": "black", 'text-align': 'center',}
                         ),
                     ],
                 ),
@@ -70,7 +86,7 @@ app.layout = html.Div(
             children=[
                 html.Div(
                     children=[
-                        html.Div(children="Artist Popularity", className="menu-title"),
+                        html.Div(children="Artist Popularity", className="menu-title",style={"fontsize": "10px", 'text-align': 'center'}),
                         dcc.Dropdown(
                             id="popularity-index",
                             options=[
@@ -84,7 +100,7 @@ app.layout = html.Div(
             
                         html.P(
                             children="*Based on Spotify's internal ranking system from 0 to 100",
-                            style={"fontsize": "10px", "color": "black", 'text-align': 'left'}
+                            style={"fontsize": "10px", "color": "black", 'text-align': 'center'}
                         ),
                     ],
                 ),

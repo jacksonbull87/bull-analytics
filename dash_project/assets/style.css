@@ -1,8 +1,9 @@
 
 .menu {
     height: 90px;
-    width: 512px;
-    display: flex;
+    width: 412px;
+    /* display: flex; */
+    float:center;
     justify-content: space-evenly;
     padding-top: 20px;
     padding-bottom: 10px;
@@ -23,7 +24,7 @@
 .header {
     background-color: #222222;
     height: 250px;
-    padding: 16px 0 0 0;
+    padding: 20px 0 0 0;
 }
 
 .topleftcard {
@@ -77,14 +78,21 @@
 .databox-title {
     margin-bottom: 6px;
     font-weight: bold;
-    color: #a70000;
+    color: #0ea700;
+}
+
+.updatebox-title {
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #0ea700;
 }
 
 .databox {
-    height: 200px;
-    width: 200px; 
+    height: 120px;
+    width: 250px; 
     margin-top: -10%;
-    margin-bottom: -4%;
+    margin-bottom: 1%;
+    margin-left: ;
     box-shadow: 0px 0px 20px 20px rgba(0.18, 0, 0.18, 0.18);
     display: flex;
     /* margin: -10px auto 100px auto; */
@@ -92,4 +100,20 @@
     /* justify-content: space-evenly; */
     /* padding-top: 20px; */
     padding-bottom: 40px;
+    
 }
+
+.updatebox {
+    /* height: 120px; */
+    width:250px;
+    margin:50px ;
+    float:right;
+    top:-40px;
+
+    /* height: 120px; */
+    /* width: 250px;  */
+    margin-top: -10%;
+    margin-bottom: 1%;
+
+    background-color: #FFFFFF;
+    padding-bottom: 10px;
