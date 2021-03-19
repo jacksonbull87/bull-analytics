@@ -52,18 +52,7 @@ def get_track_metadata(api_token, cm_track_id):
     #cm_track_id refers to the chartmetric track id associated with the song
     #returns a dictionary('id', 'name', 'isrc', 'image_url', 'duration_ms', 'composer_name', 
     #'artists', 'albums', 'tags', 'cm_audio_features', 'release_date', 'lastfm', 'cm_statistics')
-    import requests
-    from requests.packages.urllib3.util.retry import Retry
-    retry_strategy = Retry(
-    total=3,
-    backoff_factor=1,
-    status_forcelist=[ 500, 502, 503, 504],
-    method_whitelist=["HEAD", "GET", "OPTIONS"],)
-    adapter = HTTPAdapter(max_retries=retry_strategy)
-    http = requests.Session()
-    http.mount("https://", adapter)
-    http.mount("http://", adapter)
-    response = http.get(url='https://api.chartmetric.com/api/track/{}'.format(cm_track_id),
+    response = requests.get(url='https://api.chartmetric.com/api/track/{}'.format(cm_track_id),
                             headers={'Authorization' : 'Bearer {}'.format(api_token)}
                                 )
     if response.status_code == 200:
@@ -71,47 +60,6 @@ def get_track_metadata(api_token, cm_track_id):
         data = response.json()
         track = data['obj']
         return track
-    else:
-        print(response.status_code)
-        print(response.text)
-
-def get_artist_metadata(api_token, cm_artist_id):
-    #cm_track_id refers to the chartmetric track id associated with the song
-    #returns a dictionary('id', 'name', 'isrc', 'image_url', 'duration_ms', 'composer_name', 
-    #'artists', 'albums', 'tags', 'cm_audio_features', 'release_date', 'lastfm', 'cm_statistics')
-    retry_strategy = Retry(
-    total=3,
-    backoff_factor=1,
-    status_forcelist=[ 500, 502, 503, 504],
-    method_whitelist=["HEAD", "GET", "OPTIONS"],)
-    adapter = HTTPAdapter(max_retries=retry_strategy)
-    http = requests.Session()
-    http.mount("https://", adapter)
-    http.mount("http://", adapter)
-    response = http.get(url='https://api.chartmetric.com/api/artist/{}'.format(cm_artist_id),
-                            headers={'Authorization' : 'Bearer {}'.format(api_token)}
-                                )
-    if response.status_code == 200:
-
-        data = response.json()
-        artist = data['obj']
-        return artist
-    else:
-        print(response.status_code)
-        print(response.text)
-
-def get_artist_tracks(api_token, cm_artist_id):
-    #cm_track_id refers to the chartmetric track id associated with the song
-    #returns a dictionary('id', 'name', 'isrc', 'image_url', 'duration_ms', 'composer_name', 
-    #'artists', 'albums', 'tags', 'cm_audio_features', 'release_date', 'lastfm', 'cm_statistics')
-    response = requests.get(url='https://api.chartmetric.com/api/artist/{}/tracks'.format(cm_artist_id),
-                            headers={'Authorization' : 'Bearer {}'.format(api_token)}
-                                )
-    if response.status_code == 200:
-
-        data = response.json()
-        artist = data['obj']
-        return artist
     else:
         print(response.status_code)
         print(response.text)
@@ -146,7 +94,6 @@ def get_tiktok_chart_data(api_token, chart_type, date, interval, limit=100):
     #date == YYYY-MM-DD
     #for interval, accepted values include 'daily', 'weekly'
     #returns a list of song metadata
-    import requests
     response = requests.get(url='https://api.chartmetric.com/api/charts/tiktok/{}'.format(chart_type),
                             headers={'Authorization' : 'Bearer {}'.format(api_token)}, params={'date': date, 'interval': interval, 'limit': limit}
                                 )
@@ -289,7 +236,6 @@ def get_artist_id(api_token, q, search_type):
 
 def get_fan_metrics(api_token, cm_artist_id, source, since_date, until_date, field=None):
     #returns a list of dictionaries, each item being a different timestamp
-    import requests
     retry_strategy = Retry(
     total=3,
     backoff_factor=1,
@@ -319,7 +265,7 @@ def get_fan_metrics(api_token, cm_artist_id, source, since_date, until_date, fie
 def get_instagram_audience(api_token, cm_artist_id):
     #returns a list of dictionaries, each item being a different timestamp
     response = requests.get(url='https://api.chartmetric.com/api/artist/{}/instagram-audience-stats'.format(cm_artist_id),
-                            headers={'Authorization' : 'Bearer {}'.format(api_token)},
+                            headers={'Authorization' : 'Bearer {}'.format(api_token)}
                                 )
     if response.status_code == 200:
         data = response.json()

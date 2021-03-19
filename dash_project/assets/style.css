@@ -6,9 +6,11 @@
     justify-content: space-evenly;
     padding-top: 20px;
     padding-bottom: 10px;
+    margin-top: 50px;
+    /* margin-bottom: -10%; */
     margin: -10px auto 100px auto;
     background-color: #FFFFFF;
-    box-shadow: 6px 8px 10px 6px rgba(0.18, 0, 0.18, 0.50);
+    box-shadow: 0px 0px 20px 20px rgba(0.18, 0, 0.18, 0.18);
 }
 
 
@@ -20,20 +22,74 @@
 
 .header {
     background-color: #222222;
-    height: 200px;
+    height: 250px;
     padding: 16px 0 0 0;
 }
 
-.card {
-    margin-bottom: 24px;
-    box-shadow: 0 4px 6px 0  rgba(0.18, 0.18, 0.18, 0.18);
+.topleftcard {
+    /* margin-bottom: auto; */
+    margin-left: 0%;
+    /* margin-right: auto; */
+    /* padding-left: 0%; */
+    padding-right: 0%;
+    /* box-shadow: -20px 0px 20px 20px  rgba(0.18, 0.18, 0.18, 0.18); */
+    max-height: auto;
+    max-width: auto;
+
+}
+
+.topmiddlecard {
+    /* margin-bottom: auto; */
+    margin-right: 0%;
+    margin-left: 10%;
+    padding-left: 0%;
+    padding-right: 0%;
+    /* box-shadow: -20px 0px 20px 20px  rgba(0.18, 0.18, 0.18, 0.18); */
+    max-height: auto;
+    max-width: auto;
+}
+
+.toprightcard {
+    /* margin-bottom: auto; */
+    margin-right: 0%;
+    margin-left: 10%;
+    /* padding-left: 0%; */
+    /* padding-right: 0%; */
+    /* box-shadow: -20px 0px 20px 20px  rgba(0.18, 0.18, 0.18, 0.18); */
+    max-height: auto;
+    max-width: auto;
+
 }
 
 .wrapper {
+    justify-content: center ;
     margin-right: auto;
     margin-left: auto;
-    max-width: 1250px;
-    padding-right: 10px;
-    padding-left: 10px;
-    margin-top: 32px;
+    max-width: auto;
+    padding-right: auto;
+    padding-left: auto;
+    margin-top: 1%;
+    box-shadow: 6px 6px 6px 6px  rgba(0.18, 0.18, 0.18, 0.18);
+
+}
+
+
+.databox-title {
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #a70000;
+}
+
+.databox {
+    height: 200px;
+    width: 200px; 
+    margin-top: -10%;
+    margin-bottom: -4%;
+    box-shadow: 0px 0px 20px 20px rgba(0.18, 0, 0.18, 0.18);
+    display: flex;
+    /* margin: -10px auto 100px auto; */
+    background-color: #FFFFFF;
+    /* justify-content: space-evenly; */
+    /* padding-top: 20px; */
+    padding-bottom: 40px;
 }

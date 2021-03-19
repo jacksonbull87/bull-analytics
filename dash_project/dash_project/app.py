@@ -1,0 +1,116 @@
+import dash
+import dash_core_components as dcc
+import dash_html_components as html
+import pandas as pd
+import numpy as np
+from dash.dependencies import Output, Input
+import plotly.express as px
+
+
+
+data = pd.read_csv("data/tiktok_artists.csv")
+# data = data.query("type == 'conventional' and region == 'Albany'")
+# data["Date"] = pd.to_datetime(data["Date"], format="%Y-%m-%d")
+data.sort_values("total_ig_followers", ascending=False ,inplace=True)
+
+app = dash.Dash(__name__)
+server = app.server
+app.title = "Artist Discovery Tool: MVP"
+
+
+app.layout = html.Div(
+    children=[
+        html.Div(
+            children = [
+        html.H1(
+            children="Artist Discovery: MVP",
+            style={"fontsize": "48px", "color": "white", 'text-align': 'center'}
+        ),
+        html.P(
+            children="This insights tool analyzes Tiktok's weekly Top 100 Tracks by comparing the number of Instagram followers of each artist.",
+            style={"fontsize": "20px", "color": "white", 'text-align': 'center'}
+        ),
+        html.P(
+            children="Week of {}".format(data['added_at'][0]),
+            style={"font-size": "30px", "color": "white", 'text-align': 'center', 'font-weight':['bold']}),
+            ],
+            className="header",
+        ),
+        html.Div(
+            children=[
+                html.Div(
+                    children=[
+                        html.Div(children="Artist Popularity", className="menu-title"),
+                        dcc.Dropdown(
+                            id="career-filter",
+                            options=[
+                                {"label": stage, "value": stage}
+                                for stage in np.sort(data['Popularity-Index'].unique())
+                            ],
+                            value=">= 90",
+                            clearable=False,
+                            # className="dropdown",
+                        ),
+                        html.P(
+                            children="*Based on Spotify's internal ranking system from 0 to 100",
+                            style={"fontsize": "10px", "color": "black", 'text-align': 'left'}
+                        ),
+
+                    ]
+                ),
+                
+            ],
+            className="menu",
+            
+        ),
+        html.Div(
+            children=[
+                html.Div(
+                    children=dcc.Graph(
+                        id="ig-chart", config={"displayModeBar": False},
+                        figure={
+                            "layout":{
+                                "title":{
+                                    "text": "chart text",
+                                },
+                            },
+                        },
+                    ),
+                    className="card",
+                ),
+            
+            ],
+            className="wrapper",
+        ),
+    ],
+)
+@app.callback(
+    Output("ig-chart", "figure"),
+    
+        [Input("career-filter", "value")],
+        # Input("type-filter", "value"),
+        # Input("date-range", "start_date"),
+        # Input("date-range", "end_date"),
+)
+        
+def update_charts(stage):
+    mask = data['Popularity-Index'] == stage
+
+    
+    filtered_data = data.loc[mask, :][:10]
+    ig_chart_figure = px.bar(filtered_data, x='artist', y='total_ig_followers',
+                            title = "Top Artists of Last 30 Days",
+                            labels={'artist':'Artist', 'total_ig_followers': 'Instagram Followers (1-Week Before Chart Appearance)'
+
+                            },
+                            width=1300, height=800
+    
+
+    )
+
+    return ig_chart_figure
+
+
+
+if __name__ == "__main__":
+    app.run_server(debug=True)

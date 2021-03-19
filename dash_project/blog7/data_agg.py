@@ -35,13 +35,11 @@ def parse_tiktok_data(data):
 #returns new dataframe with `cm_artist_id` feature
 def create_artist_id_feat(api_token, dataframe):
     from cm_api import get_track_metadata
-    import time
     bucket = []
     for row in dataframe.iterrows():
         track_id = row[1]['cm_id']
         artist_id = get_track_metadata(api_token, track_id)['artists'][0]['id']
         bucket.append(artist_id)
-        time.sleep(1.36)
 
     dataframe['cm_artist_id'] = bucket
     return dataframe
@@ -82,7 +80,7 @@ def create_instagram_followers_before_feat(api_token,dataframe):
     dataframe['total_ig_followers'] = [x[0] for x in bucket]
     return dataframe
 
-def create_instagram_followers_after_feat(api_token,dataframe):
+def create_instagram_followers_after_feat(dataframe):
     from cm_api import get_fan_metrics
     bucket = []
     for row in dataframe.iterrows():
@@ -96,6 +94,7 @@ def create_instagram_followers_after_feat(api_token,dataframe):
         else:
             tup = (None, None)
             bucket.append(tup) 
+
     dataframe['ig_followers_afters'] = [x[1] for x in bucket]
     return dataframe
 
@@ -126,23 +125,4 @@ def collect_artist_sppop(api_token, dataframe):
 
     dataframe['artist_pop'] = bucket
     return dataframe
-
-#given artist id and date, this function iterates thru a dataframe and 
-#creates new feature for instagram engagement
-def create_artist_ig_engagement_feat(api_token, dataframe):
-    from cm_api import get_instagram_audience
-    bucket = []
-    for row in dataframe.iterrows():
-        artist_id = row[1]['cm_artist_id']
-
-        ig_data = get_instagram_audience(api_token, artist_id)
-        if len(ig_data) > 0:
-            eng_rate = ig_data.get('engagement_rate', 0)
-            bucket.append(eng_rate)
-        else:
-            bucket.append(None)
-
-    dataframe['ig_eng'] = bucket
-    return dataframe
-
 
