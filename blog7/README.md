@@ -46,7 +46,7 @@ The output of the tool is a visualization showing the artists in the 75th percen
 - 30% of the tracks have been on the chart for less than a month
 
 Since this is a discovery tool, we're only concerned with the newest records. So the next step would be to filter this dataset down to artists who have only been on this chart for a month.
-### Top 10 New Artists Trending on Tiktok Chart (Sorted by Total Instagram Following)
+### Top 10 Artists in Last 30 Days (Sorted by Total Instagram Following **before** the track's first appearance on the Chart)
 <img align="center" width="1000" height="700" src="https://github.com/jacksonbull87/bull-analytics/blob/main/blog7/visuals/top10_artistsIG.jpeg">
 
 #### Insights
@@ -55,6 +55,12 @@ Since this is a discovery tool, we're only concerned with the newest records. So
     - Rauw Alejandro: 6,916,424 IG Followers **(Puerto Rico)**
     - Kali Uchis: 2,211,918 IG Followers **(Colombian-American)**
     - Teto: 1,107,185 IG Followers **(Brazil)**
+
+### Top 10 Artists in Last 30 Days (Sorted by % Gain of Instagram Followers)
+<img align="center" width="1000" height="700" src="https://github.com/jacksonbull87/bull-analytics/blob/main/blog7/visuals/top10_IG_Gain.jpeg">
+
+#### Insights
+
 
 
 
