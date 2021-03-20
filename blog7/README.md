@@ -26,7 +26,7 @@ The sample dataset consists of the top 100 tracks trending on Tiktok for the wee
 |`Week_In_Chart_Date`| Date 7 day's after the record's first chart appearance|
 |`ig_followers_afters`| # of Instagram followers on `Week_In_Chart_Date`|
 |`IG_Follower_Gain-%`| % Gain in Instagram followers from `Before_Tiktok_Date` to `Week_In_Chart_Date`|  
-|`ig_eng_before`| Instagram Engagement at the time of `Before_Tiktok_Date`|
+|`ig_eng`| Instagram Engagement at the time of `added_at`|
 
 
 ### Measurement
