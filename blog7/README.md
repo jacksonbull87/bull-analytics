@@ -66,6 +66,12 @@ Since this is a discovery tool, we're only concerned with the newest records. So
 
 #### Insights
 
+### Scatterplot - Relationship between Instagram Follower Gain and Engagement
+<img align="center" width="1000" height="700" src="https://github.com/jacksonbull87/bull-analytics/blob/main/blog7/visuals/scatter.jpeg">
+
+#### Insights
+- As indicated by the scatterplot, above, there is a strong linear relationship between engagement and follower acquisition 
+
 
 
 
