@@ -1,9 +1,7 @@
 # Artist Discovery Tool: MVP (*Work-In-Progress*)
 
 ## Description
-This insights tools is designed to analyze Tiktok's Top 100 Weekly chart by identifying the artists with an above-average fanbase on Instagram prior to getting placed on the chart. 
-
-From the perspective of talent seekers and A&R professionals, one of the inherent risks when pouring more resources into a client is the possibility that they'll be no one on the other side to receive the creator's message. This tool mitigates that risk by ensuring that there is an an existing audience to build off of.
+Social Media insights for trending artists on Tiktok's weekly Top 100 Chart. Currently covers Instagram audience data
 
 The sample dataset consists of the top 100 tracks trending on Tiktok for the week of March 9, 2021 **(2021-05-02 thru 2021-05-09)**
 
