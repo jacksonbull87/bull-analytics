@@ -10,7 +10,7 @@ The sample dataset consists of the top 100 tracks trending on Tiktok for the wee
 | Variable        | Description     | 
 | :---:|:---: | 
 | `added_at` | Date of Weekly Chart| 
-| `Before_Tiktok_Date` | 7 days before record's first occurance on Tiktok chart. `added_at` - (`time_on_chart` + 7)| 
+| `Before_Tiktok_Date` | 7 days before record's first occurance on Tiktok chart. `added_at` - (`time_on_chart` - 7)| 
 | `title`|Track's title|
 |`artist`| Primary artist|
 |`isrc`| isrc|
